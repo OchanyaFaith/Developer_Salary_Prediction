@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 def load_model():
-    with open('lgm_model.pkl', 'rb' ) as file:
+    with open('https://github.com/OchanyaFaith/Developer_Salary_Prediction/blob/main/lgm_model.pkl', 'rb' ) as file:
         data = pickle.load(file)
     return data
 
