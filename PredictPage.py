@@ -3,8 +3,9 @@ import pickle
 import numpy as np
 
 def load_model():
-    with open('https://github.com/OchanyaFaith/Developer_Salary_Prediction/blob/main/lgm_model.pkl', 'rb' ) as file:
-        data = pickle.load(file)
+    url = 'https://github.com/OchanyaFaith/Developer_Salary_Prediction/blob/main/lgm_model.pkl'
+        response = requests.get(url)
+        data = pickle.loads(response.content)
     return data
 
 data = load_model()
