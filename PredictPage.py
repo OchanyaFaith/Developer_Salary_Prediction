@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
+import requests
 
 def load_model():
     url = 'https://github.com/OchanyaFaith/Developer_Salary_Prediction/blob/main/lgm_model.pkl'
